@@ -1,0 +1,200 @@
+@import url('style.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    font-family: Arial, sans-serif;
+    height:100vh
+}
+.Portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+    
+}
+.sky-text {
+    color: #0097ee; 
+    text-shadow: 0 0 10px rgba(1, 54, 85, 0.8), 0 0 20px rgba(135, 206, 235, 0.5);
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+
+    background: #333;
+    
+    position: fixed;
+    align-items: center;
+    display:flex;
+    
+   
+}
+.navlist li{
+    list-style: none;
+}
+.navlist a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 5px rgb(18, 235, 72), 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
+    }
+    100% {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 50px #0ff, 0 0 80px #0ff, 0 0 100px #0ff;
+    }
+  }
+.left-container{
+    background: #262525;
+    width: 70%;
+    height: 100vh;
+    padding-left:3rem;
+    
+    
+}
+.left-container, .right-container{
+    height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+ .icons .fa-brands {
+    color: #fff; 
+    font-size:1.7rem;
+    
+    
+}
+.right-container{
+    background: linear-gradient(-45deg,#3877ff,#262525 70%);
+    width: 30%;
+    height: 100vh;
+    
+}
+.li{
+    color:white;
+}
+
+
+.intro {
+    font-family: 'Courier New', Courier, monospace; /* Hacker style font */
+    color: #00ff00; /* Neon green */
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff6600, 0 0 30px #00ff00;
+    }
+    100% {
+        text-shadow: 0 0 20px #08b808, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+}
+
+.icons{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    height: 100vh;
+}
+.content{
+    margin-left:3.5rem;
+}
+.content h1{
+    font-size:4rem;
+    color:#0097ee;
+}
+.content .detail{
+    font-size:1.1rem;
+    color:#fff;
+    max-width: 38rem;
+    margin:1.1rem 0 3rem 0;
+    line-height:1.8rem;
+}
+.fa-brands.fa-facebook-f:hover {
+    color: #3B5998; /* Facebook blue */
+    cursor: pointer;
+    transform: scale(0.9) translateY(2px); 
+}
+.fa-brands.fa-x-twitter:hover{
+     color:#1C1C1C;
+    cursor: pointer;
+    transform: scale(0.9) translateY(2px); 
+}
+.fa-brands.fa-linkedin-in:hover{
+    color:#04669A;
+    cursor: pointer;
+    transform: scale(0.9) translateY(2px); 
+}
+.fa-brands.fa-github:hover{
+    color:#040204;
+    cursor:pointer;
+    transform: scale(0.9) translateY(2px); 
+
+}
+.fa-brands.fa-facebook-f,.fa-x-twitter, .fa-linkedin-in, .fa-github {
+   
+    transition: color 0.1s ease, transform 0.1s ease; /* Smooth transition for color */
+}
+.btn-container button{
+    border:none;
+    font-size:1.1rem;
+    padding:.8rem 1.5rem;
+    border-radius:.5rem;
+    background-color:#0097ee;
+    transition : color 0.1s ease , transform 0.1s ease;
+}
+.btn-container button:hover{
+    transform: scale(0.9) translateY(2px) ; 
+    color:#0097ee;
+    background-color: #fff;
+}
+.design .circle{
+    aspect-ratio:1;
+    position:absolute;
+    border-radius : 50% ;
+    top:50%;
+    left:70%;
+    transform:translate(-50%, -50%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg,transparent 50%,#262525 50%);
+    width:38rem;
+    
+}
+.circle:nth-child(2){
+    background-image: url("image/rajveer.jpg");
+    width:30rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:.1rem solid white;
+    background-position: center;
+    box-shadow:
+    0 0 1rem #fff,
+    inset 0 0 1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff,
+    0 0 4rem #3877ff,
+    inset 0 0 4rem #3877FF
+;
+
+}
+
+
+
+
+    

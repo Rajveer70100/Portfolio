@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="Portfolio-container">
+        <ul class="navlist">
+            <li><a href="#" data-section="home-section">Home</a></li>
+            <li><a href="#" data-section="work-section">Work</a></li>
+            <li><a href="#" data-section="about-section">About</a></li>
+            <li><a href="#" data-section="project-section">Project</a></li>   
+            <li><a href="#" data-section="service-section">Service</a></li>   
+        </ul>
+    
+    <div class="left-container">
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin-in" onclick="window.open('http://www.linkedin.com/in/rajveer-sharma-bb275224b','_blank')"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="content">
+            <p class="intro">Hi, I am <span class="sky-text">Rajveer Sharma.</span></h2>
+            <h1 class="glitch">Cybersecurity Analyst.</h1>
+            <p class="detail">I specialize in identifying and mitigating cyber threats to ensure data security and privacy.
+                With a focus on network security and vulnerability assessments, I’m dedicated to protecting digital systems from evolving threats.</p>
+                <div class="btn-container">
+                    <button>Hire me</button>
+                    <button class="view-btn">View Project</button>
+                </div>
+        </div>
+        
+    </div>
+    <div class="right-container"></div>
+    <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+    </div>
+    </div>
+
+    <div id="home-section" class="section-content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is the home section. Explore my work and projects.</p>
+    </div>
+
+    <div id="work-section" class="section-content" style="display: none;">
+        <h2>My Work</h2>
+        <p>Here are some details about the work I have done in cybersecurity.</p>
+    </div>
+
+    <div id="about-section" class="section-content" style="display: none;">
+        <h2>About Me</h2>
+        <p>I am Rajveer Sharma, a cybersecurity analyst focused on network security.</p>
+    </div>
+
+    <div id="project-section" class="section-content" style="display: none;">
+        <h2>Projects</h2>
+        <p>Here are some of the projects I have worked on, including vulnerability assessments and network protection solutions.</p>
+    </div>
+
+    <div id="service-section" class="section-content" style="display: none;">
+        <h2>Services</h2>
+        <p>I offer a range of services including cybersecurity consulting, vulnerability assessments, and data protection solutions.</p>
+    </div>
+
+    
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
